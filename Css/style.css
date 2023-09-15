@@ -1,0 +1,234 @@
+/* Reset de estilos para el body y el header */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "TT Commons Pro Expand", sans-serif;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #A7ADAF;
+}
+
+.sticky-header .logo img {
+    width: 120px; 
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #A7ADAF;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.active a {
+    color: white;
+}
+
+.cart-icon {
+    font-size: 24px;
+    color: white;
+}
+
+.fa-shopping-cart:before {
+    content: "\f07a";
+}
+
+/* seccion videos */
+.video-section {
+    position: relative;
+    height: calc(100vh - 100px); 
+    overflow: hidden;
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.video-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 300%;
+    text-align: left;
+    width: 75%;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+    display: block;
+}
+
+/* seccion ofertas */
+
+.last-offers {
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section-header {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px;
+    gap: 20px;
+}
+.product-card {
+    background-color: white;
+    width: 300px;
+    text-align: left; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.product-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    margin-top: auto; 
+}
+
+.product-description {
+    color: black;
+}
+
+/* categorias */
+.image-text-section {
+    display: flex;
+    height: 100vh;
+}
+
+.text-half {
+    flex: 1;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.text-half h2 {
+    color: #BFC4C6;
+}
+
+.ver-ahora-button {
+    padding: 10px 20px;
+    background-color: black;
+    border: 2px solid #A7ADAF;
+    color: #A7ADAF; 
+    cursor: pointer;
+    width: 40%;
+    transition: background-color 0.3s ease;
+}
+
+.ver-ahora-button:hover {
+    background-color: #A7ADAF; 
+    color: black; 
+}
+
+.image-half {
+    flex: 1; 
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-half img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*footer */
+
+.site-footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 100px; 
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.footer-visit, .footer-phone {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-visit h3, .footer-phone h3 {
+    font-size: 18px;
+}
+
+.footer-visit p, .footer-phone p {
+    margin: 5px 0;
+}

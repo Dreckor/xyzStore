@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <title>XYZ Store</title>
+</head>
+
+<body>
+    <!-- header-->
+    <header class="sticky-header">
+        <div class="logo">
+            <img src="https://i.imgur.com/CDKHabU.png" alt="Logo">
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li class="active"><a href="#">Inicio</a></li>
+                <li><a href="#last-offers"">Ofertas</a></li>
+                <li><a href=" #categorias">Categorías</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </header>
+
+    <!-- videos -->
+    <section class="video-section">
+        <div class="video-container">
+            <video id="video" autoplay muted></video>
+        </div>
+        <div class="overlay" id="overlay"></div>
+        <div class="video-text" id="video-text">
+            <h1>Dale un vistazo a nuestras ofertas</h1>
+        </div>
+    </section>
+
+
+    <!-- offertas -->
+    <section class="last-offers" id="last-offers">
+        <div class=" section-header">
+            <h1>Últimas Ofertas</h1>
+        </div>
+        <div class="product-carousel">
+
+            <div class="product-card">
+                <img src="https://i.imgur.com/PIkIqVf.png" alt="Producto">
+                <div class="product-info">
+                    <div class="product-price">
+                        <p style="color: #BFC4C6;">$199.99</p>
+                        <p style="font-weight: bold; color: black;">All in One Gamer</p>
+                    </div>
+                    <p class="product-description">Nuestro todo en uno más potente es ideal para trabajar y estudiar a
+                        al máximo rendimiento</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://i.imgur.com/D4QPSCJ.png" alt="Producto">
+                <div class="product-info">
+                    <div class="product-price">
+                        <p style="color: #BFC4C6;">$249.99</p>
+                        <p style="font-weight: bold; color: black;">Portatil Alienware</p>
+                    </div>
+                    <p class="product-description">Lleva tu experiencia de juego al siguiente nivel con una de las
+                        laptops mas potentes del mercado</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://i.imgur.com/pUsrbEJ.png" alt="Producto">
+                <div class="product-info">
+                    <div class="product-price">
+                        <p style="color: #BFC4C6;">$299.99</p>
+                        <p style="font-weight: bold; color: black;">Portatil MSI</p>
+                    </div>
+                    <p class="product-description">La combinación perfecta entre portabilidad y potencia, adquierela
+                        ahora</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://i.imgur.com/WM9C15N.jpg" alt="Producto">
+                <div class="product-info">
+                    <div class="product-price">
+                        <p style="color: #BFC4C6;">$49.99</p>
+                        <p style="font-weight: bold; color: black;">Mouse HyperX</p>
+                    </div>
+                    <p class="product-description">Un mouse ligero y preciso, ideal para largas jornadas de
+                        juegos</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://i.imgur.com/jkckLcX.gif" alt="Producto">
+                <div class="product-info">
+                    <div class="product-price">
+                        <p style="color: #BFC4C6;">$189.99</p>
+                        <p style="font-weight: bold; color: black;">intel core i9</p>
+                    </div>
+                    <p class="product-description">El procesador intel core i9 listo para overclock,
+                        revitalizara tu PC</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://i.imgur.com/J51H7FY.jpg" alt="Producto">
+                <div class="product-info">
+                    <div class="product-price">
+                        <p style="color: #BFC4C6;">$65.99</p>
+                        <p style="font-weight: bold; color: black;">Combo Gamer</p>
+                    </div>
+                    <p class="product-description">Llevate un combo con diadema, teclado, mouse y
+                        alfombrilla a un precio increible</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://i.imgur.com/J51H7FY.jpg" alt="Producto">
+                <div class="product-info">
+                    <div class="product-price">
+                        <p style="color: #BFC4C6;">$119.99</p>
+                        <p style="font-weight: bold; color: black;">Gabinete coolermaster</p>
+                    </div>
+                    <p class="product-description">El gabinete que necesitas para mantener tus componentes frescos</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://i.imgur.com/WK3MjXL.jpg" alt="Producto">
+                <div class="product-info">
+                    <div class="product-price">
+                        <p style="color: #BFC4C6;">$99.99</p>
+                        <p style="font-weight: bold; color: black;">Escritorio gamer</p>
+                    </div>
+                    <p class="product-description">El espacio que necesitas para trabajar o jugar a gusto</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.imgur.com/HmBzKAR.jpg" alt="Producto">
+                <div class="product-info">
+                    <div class="product-price">
+                        <p style="color: #BFC4C6;">$89.99</p>
+                        <p style="font-weight: bold; color: black;">Diadema gamer</p>
+                    </div>
+                    <p class="product-description">Escucha con la mayor claridad de detalle en todo momento</p>
+                </div>
+            </div>
+
+
+    </section>
+
+    <!-- categorias-->
+    <section class="image-text-section" id="categorias">
+        <div class="image-half">
+            <img src="https://i.imgur.com/98zJ2qF.png alt=" Imagen">
+        </div>
+        <div class="text-half" style="align-items: right;">
+            <h2 style="color: #BFC4C6;">PORTÁTILES</h2>
+            <p style="color: white;">Aquí encontrarás la combinación perfecta de potencia y portabilidad. Desde
+                ultradelgados diseñados para llevar a todas partes hasta poderosas estaciones de trabajo móviles,
+                tenemos el portátil que se adapta a tu estilo de vida.</p>
+            <button class="ver-ahora-button">VER AHORA</button>
+        </div>
+    </section>
+
+    <section class="image-text-section">
+        <div class="text-half" style="align-items: right;">
+            <h2 style="color: #BFC4C6;">EQUIPOS DE MESA</h2>
+            <p style="color: white;">Potencia tu vida con equipos de escritorio de alto rendimiento. Descubre el poder
+                que necesitas en cada tarea</p>
+            <button class="ver-ahora-button">VER AHORA</button>
+        </div>
+        <div class="image-half">
+            <img src="https://i.imgur.com/RQqSMdZ.png" alt="Imagen">
+        </div>
+    </section>
+
+    <section class="image-text-section">
+        <div class="image-half">
+            <img src="https://i.imgur.com/Pz6bvfQ.png" alt="Imagen">
+        </div>
+        <div class="text-half" style="align-items: right;">
+            <h2 style="color: #BFC4C6;">PERIFERICOS</h2>
+            <p style="color: white;">Completa tu experiencia informática con periféricos de calidad superior. Teclado,
+                ratón, monitor y más, todo lo que necesitas para un rendimiento óptimo. ¡Mejora tu setup ahora!</p>
+            <button class="ver-ahora-button">VER AHORA</button>
+        </div>
+    </section>
+
+    <!-- footer-->
+    <footer class="site-footer">
+        <div class="footer-logo">
+            <img src="https://i.imgur.com/CDKHabU.png" alt="Logo">
+        </div>
+        <div class="footer-contact">
+            <div class="footer-visit">
+                <h3>Visítanos</h3>
+                <p>Cll 114a-08</p>
+            </div>
+            <div class="footer-phone">
+                <h3>Contacto</h3>
+                <p>Teléfono: +1 123-456-7890</p>
+                <p>Correo: info@miempresa.com</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./Js/script.js"></script>
+</body>
+
+</html>
